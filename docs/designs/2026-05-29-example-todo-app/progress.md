@@ -18,3 +18,7 @@
 - Task 3 implementation complete: 11 integration tests passing; fixed missing `.all()` on Drizzle SELECT queries (plan error); spec + quality reviews pending at session end
   - Commit: `5fff065` query functions + tests
 - Added session-state.md and progress.md; updated CLAUDE.md to require session updates after each task
+- Added harness-improvement-log.md; updated CLAUDE.md to require logging harness gaps
+- Added .gitignore (worktrees, local settings); moved git permissions to project settings.json
+- Set up and removed Stop hook (too noisy per response); lesson logged in improvement log
+- Commits: `fe0d786` harness infrastructure, `1b1d0f6` remove noisy hook

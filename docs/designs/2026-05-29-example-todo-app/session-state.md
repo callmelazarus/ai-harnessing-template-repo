@@ -12,13 +12,15 @@ In progress
 
 ## Last action
 
-Task 3 implementer completed: wrote queries.test.ts (11 tests), wrote queries.ts, fixed missing `.all()` on Drizzle SELECT queries, verified all 11 tests pass. Committed `5fff065`.
+Harness improvements: added session-state.md/progress.md update rules to CLAUDE.md, created harness-improvement-log.md, added .gitignore, set up and then removed Stop hook (too noisy), moved git permissions to project settings.json. All committed and pushed.
+
+Task 3 implementer completed: wrote queries.test.ts (11 tests), wrote queries.ts, fixed missing `.all()` on Drizzle SELECT queries, verified all 11 tests pass. Committed `5fff065`. Spec + quality reviews still pending.
 
 ## Next action
 
-Run spec compliance review for Task 3, then code quality review. Fix any issues found. Mark Task 3 complete, then proceed with Task 4 (Server Actions).
+Enter worktree with `EnterWorktree` using path `.claude/worktrees/feat+example-todo-app` (branch `worktree-feat+example-todo-app`). Run spec compliance review for Task 3, then code quality review. Fix any issues. Mark Task 3 complete, then continue with Tasks 4–7.
 
-Use `superpowers:subagent-driven-development` skill. Worktree already exists — enter it with `EnterWorktree` using path `.claude/worktrees/feat+example-todo-app` (branch `worktree-feat+example-todo-app`).
+Use `superpowers:subagent-driven-development` skill throughout.
 
 ## Blockers
 
