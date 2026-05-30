@@ -1,0 +1,5 @@
+# Claude Code worktrees — isolated checkouts, never committed
+.claude/worktrees/
+
+# Local settings overrides — personal, not shared
+.claude/settings.local.json

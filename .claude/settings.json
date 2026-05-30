@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "ROOT=$(git worktree list 2>/dev/null | head -1 | awk '{print $1}'); [ -z \"$ROOT\" ] && ROOT=$(git rev-parse --show-toplevel 2>/dev/null); if grep -rq \"^In progress\" \"${ROOT}/docs/designs\"/*/session-state.md 2>/dev/null; then printf '{\"systemMessage\": \"Active feature work in progress — ask Claude to update session-state.md and progress.md before closing.\"}'; fi",
+            "statusMessage": "Checking session state..."
+          }
+        ]
+      }
+    ]
+  }
+}

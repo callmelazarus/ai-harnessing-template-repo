@@ -18,6 +18,15 @@ At session start, read in order:
 
 Confirm by stating what you read before any action.
 
+## Session updates
+
+After each task completes, update `session-state.md` with the current step, status,
+last action, next action, and any blockers. Do not wait until end of session.
+
+At end of session (or before any interruption), also append an entry to `progress.md`
+summarising what was completed and listing commit hashes. Both files live in the
+feature's `docs/designs/YYYY-MM-DD-<feature>/` directory.
+
 ## Verification gate
 
 Before declaring any task done, run `scripts/validate.sh`. All checks must pass.
@@ -34,6 +43,13 @@ scope silently.
 - Never bypass `scripts/validate.sh` (no `--no-verify`, no skipping)
 - Never commit secrets or credentials
 - Never modify `.github/workflows/ci.yml` without explicit approval
+
+## Harness improvements
+
+When you identify a gap in how the harness works — a missing rule, a file that should
+exist but doesn't, a workflow that breaks down — fix it and append an entry to
+`harness-improvement-log.md` at the repo root. Each entry: gap found, what changed, why
+it matters.
 
 ## References
 
