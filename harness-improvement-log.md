@@ -40,6 +40,18 @@
 
 ---
 
+## 2026-05-30 — Stop hook was too noisy; removed in favour of CLAUDE.md discipline
+
+**Gap found:** The `Stop` hook fired on every response turn, not just at session end. This produced a banner reminder after every single Claude reply during active work — too much noise to be useful.
+
+**What changed:**
+- Removed the `Stop` hook from `.claude/settings.json`.
+- Session-state and progress updates are now enforced purely through the CLAUDE.md "Session updates" rule, which tells the agent to write after each task and before any interruption.
+
+**Why it matters:** Hooks are the right tool for automating side effects on discrete events (file writes, commands). They are the wrong tool for enforcing agent discipline during a session — CLAUDE.md rules cover that without constant interruption.
+
+---
+
 ## 2026-05-30 — Harness improvement log itself was missing
 
 **Gap found:** Harness tweaks were being made but not recorded anywhere. Lessons learned in one session (e.g. "session-state needs to be written, not just read") were invisible to future sessions and to anyone using this repo as a template.
