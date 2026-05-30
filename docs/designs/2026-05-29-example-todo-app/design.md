@@ -1,7 +1,7 @@
 # Example Todo App — Design Spec
 
 **Date:** 2026-05-29
-**Status:** Approved
+**Status:** Draft
 
 ## Purpose
 
@@ -110,6 +110,6 @@ One `vitest` integration test file at `src/app/actions.test.ts`. Spins up an in-
 | Layer | What changes |
 |---|---|
 | **1 — Instruction** | Root `CLAUDE.md` unchanged; `example/` follows root conventions |
-| **2 — Planning** | Implementation plan at `plans/2026-05-example-todo-app/` |
+| **2 — Planning** | Implementation plan at `docs/designs/2026-05-29-example-todo-app/` |
 | **3 — Execution** | No new commands needed |
 | **4 — Evaluation** | `scripts/validate.sh` extended to typecheck + build `example/` |
