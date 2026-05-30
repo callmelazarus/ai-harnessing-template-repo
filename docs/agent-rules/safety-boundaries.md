@@ -2,7 +2,7 @@
 
 ## Never touch without explicit approval
 
-- `plans/_template/` — reference template; copy it, never edit it directly
+- `docs/designs/_template/` — reference template; copy it, never edit it directly
 - `.github/workflows/ci.yml` — CI configuration; changes affect all future runs
 - Any file containing secrets, API keys, or credentials
 - `package-lock.json` or `yarn.lock` — only when explicitly adding/removing a dependency

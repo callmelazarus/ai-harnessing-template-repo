@@ -15,7 +15,7 @@ Generate `CLAUDE.md` at the repo root with these sections:
 - **Session lifecycle:** read order — CLAUDE.md → behavior-locks.md → plan.md → session-state.md; confirm before acting
 - **Verification gate:** `scripts/validate.sh` must pass before declaring done
 - **Write scope:** stay within plan step's declared files; output `SCOPE QUESTION:` otherwise
-- **Hard stops:** never bypass validate.sh; never modify plans/_template/ without approval; never commit secrets
+- **Hard stops:** never bypass validate.sh; never modify docs/designs/_template/ without approval; never commit secrets
 - **References:** docs/agent-rules/ for conventions, safety, verification
 
 Keep it under 80 lines.
@@ -29,16 +29,16 @@ Create `docs/agent-rules/` with three files:
 - Python: snake_case vars/fns, PascalCase classes, type hints on all public functions, pytest tests beside source
 - Other stacks: ask the user for the key conventions
 
-**safety-boundaries.md** — standard content (plans/_template/ locked, CI locked, no secrets, scope discipline)
+**safety-boundaries.md** — standard content (docs/designs/_template/ locked, CI locked, no secrets, scope discipline)
 
 **verification.md** — standard content (definition of done, three-state verdicts, verification sequence, post-compact protocol)
 
-### 4. Create plans/ structure
+### 4. Create docs/designs/ structure
 
-Create `plans/README.md` (standard content: naming, files table, session start protocol, don't delete after merge).
+Create `docs/designs/README.md` (standard content: naming, files table, session start protocol, don't delete after merge).
 
-Create `plans/_template/` with these six files (use standard template content):
-- research.md, plan.md, behavior-locks.md, session-state.md, progress.md, release-verdict.md
+Create `docs/designs/_template/` with these seven files (use standard template content):
+- design.md, research.md, plan.md, behavior-locks.md, session-state.md, progress.md, release-verdict.md
 
 ### 5. Create scripts/validate.sh
 

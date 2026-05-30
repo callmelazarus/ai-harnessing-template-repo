@@ -75,8 +75,9 @@ Scores the current repository against the [Agentic Legibility Framework](docs/re
 Each feature or change gets its own plan directory:
 
 ```
-plans/
-└── 2026-05-auth-middleware/
+docs/designs/
+└── 2026-05-29-auth-middleware/
+    ├── design.md         ← spec produced during brainstorming
     ├── research.md       ← how the system works today
     ├── plan.md           ← what changes, step-by-step, with write-scope contracts
     ├── behavior-locks.md ← invariants that must not regress
@@ -85,7 +86,7 @@ plans/
     └── release-verdict.md ← proven / conditionally proven / not proven
 ```
 
-Copy `plans/_template/` to start a new plan. The agent reads the active plan at session start and stays within each step's declared write scope.
+Copy `docs/designs/_template/` to start a new feature. The agent reads the active plan at session start and stays within each step's declared write scope.
 
 ---
 
